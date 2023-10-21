@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Style the preferences text */
+        #container2 p {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        /* Style the "Add Preferences" button */
+        .add-preferences-button {
+            display: block;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px; /* Reduced font size */
+        }
+
+        #preferences {
+            justify-content: space-between;
+        }  
+    </style>
+    <title>Listener Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-buttons-container">
+            <div class="navbar-buttons">
+                <button class="navbar-button" id="listener-button">Listener Page</button>
+                <button class="navbar-button" id="add-page-button">Add Songs</button>
+                <button class="navbar-button" id="remove-page-button">Remove Songs</button>
+            </div>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search...">
+    </div>
+    <div class="play-bar">
+        <p>Currently Playing</p>
+    </div>
+    <div class="listener-bar">
+        <h1 style="color: black">Listener View</h1>
+    </div>
+    <main>
+    <div class="container-wrapper">
+        <div class="container" id="leftContainer">
+            <h5>Upcoming Song</h5>
+            <br>
+            <ul>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+            </ul>
+        </div>
+        <div>
+            <div class="container" id="container1">
+                <div class="container-text">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/be/MBDTF_ALT.jpg" alt="Picture of Album Playing" height="200">
+                        <figcaption>Sample Song Name<br>Sample Artist Name<br>Sample Album Name</figcaption>
+                    </figure>
+                        <audio src="music.mp3" controls>
+                            Your browser does not support the audio element.
+                        </audio>
+                </div>
+            </div>
+            
+            <div class="container" id="container2">
+                <h5>Preferences</h5>
+                <div class="container" id="preferences">
+                    <p>Text A</p>
+                    <p>Text B</p>
+                    <p>Text C</p>
+                    <button class="add-preferences-button" id="add-preferences-button"> Add Preferences> </button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container" id="rightContainer">
+            <h5>Preferred DJs</h5>
+            <ul>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
